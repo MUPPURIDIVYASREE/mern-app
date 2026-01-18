@@ -1,7 +1,6 @@
 FROM node:18
 WORKDIR /app
-COPY server ./server
-COPY client ./client
+COPY . .
 WORKDIR /app/server
 RUN npm install 
 WORKDIR /app/client 
