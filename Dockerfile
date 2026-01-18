@@ -3,7 +3,7 @@ WORKDIR /app
 COPY server ./server
 COPY client ./client
 WORKDIR /app/server
-RUN npm istall 
+RUN npm install 
 WORKDIR /app/client 
 RUN npm install
 RUN npm run build
